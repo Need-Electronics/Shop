@@ -18,14 +18,22 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
+   <div id="LoginScreen">
+<div class="col-md-12 text-center">
+<button type="button" id="login" class="btn btn-warning">Sign In</button>
+</div>
+</div>
+      <div class="navbar-nav col-md-12 text-center">
+      <div id="dashboard">
+      <div id="userDetails"></div>
+      <button class="btn btn-outline-secondary"  id="logout">Logout</button>
+    </div>
+<hr>
         <a class="nav-link active" aria-current="page" href="#">Home</a>
         <a class="nav-link" href="#">Features</a>
         <a class="nav-link" href="#">Pricing</a>
         <a class="nav-link disabled">Disabled</a>
-<div class="col-md-12 text-center">
-<button type="button" class="btn btn-warning">Sign In</button>
-</div>
+   
       </div>
     </div>
   </div>
@@ -36,9 +44,6 @@
     <h1>Welcome : Firebase Auth: Google</h1>
     <p>TechFerment: Firebase For Web</p>
 
-    <div id="LoginScreen">
-      <button id="login"><i class="fab fa-google fa-2x"></i></button>
-    </div>
 
     <div id="dashboard">
       <div id="userDetails"></div>
