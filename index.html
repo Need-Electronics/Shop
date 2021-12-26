@@ -39,20 +39,11 @@
     </div>
   </div>
 </nav>
-
-
-<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-  <div id="login" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-    <div class="toast-header">
-      <strong class="me-auto">Succusful</strong>
-      <small>just now</small>
-      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-    </div>
-    <div class="toast-body">
-      User succusfully signed in.
-    </div>
-  </div>
+<div class="alert alert-success" role="alert">
+Hurray! User succusfully signed in.
 </div>
+
+
 
     <h1>Welcome : Firebase Auth: Google</h1>
     <p>TechFerment: Firebase For Web</p>
@@ -89,6 +80,7 @@
       firebase.initializeApp(firebaseConfig);
 
       document.getElementById('dashboard').style.display="none"
+document.getElementById('alert').style.display="none"
 
       document.getElementById('login').addEventListener('click', GoogleLogin)
       document.getElementById('logout').addEventListener('click', LogoutUser)
@@ -101,6 +93,7 @@
           console.log(res.user)
           document.getElementById('LoginScreen').style.display="none"
           document.getElementById('dashboard').style.display="block"
+         document.getElementById('alert').style.display="block"
           showUserDetails(res.user)
         }).catch(e=>{
           console.log(e)
