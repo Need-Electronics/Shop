@@ -80,7 +80,7 @@ Hurray! User succusfully signed in.
       firebase.initializeApp(firebaseConfig);
 
       document.getElementById('dashboard').style.display="none"
-document.getElementById('alert').style.display="none"
+
 
       document.getElementById('login').addEventListener('click', GoogleLogin)
       document.getElementById('logout').addEventListener('click', LogoutUser)
@@ -93,7 +93,7 @@ document.getElementById('alert').style.display="none"
           console.log(res.user)
           document.getElementById('LoginScreen').style.display="none"
           document.getElementById('dashboard').style.display="block"
-         document.getElementById('alert').style.display="block"
+         
           showUserDetails(res.user)
         }).catch(e=>{
           console.log(e)
