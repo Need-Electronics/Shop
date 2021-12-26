@@ -44,22 +44,10 @@
     <h1>Welcome : Firebase Auth: Google</h1>
     <p>TechFerment: Firebase For Web</p>
 
-
-    <div id="dashboard">
-      <div id="userDetails"></div>
-      <button id="logout">Logout</button>
-    </div>
-
     
     
     
    
-<div class="google-btn">
-  <div class="google-icon-wrapper">
-    <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
-  </div>
-  
-</div>
     
     
     
@@ -109,9 +97,9 @@
       function showUserDetails(user){
         document.getElementById('userDetails').innerHTML = `
           <img src="${user.photoURL}" style="width:10%">
-          <p>Name: ${user.displayName}</p>
-          <p>Email: ${user.email}</p>
-        `
+          <p style="color:white">Name: ${user.displayName}</p>
+          <p style="color:white">Email: ${user.email}</p>
+        
       }
 
       function checkAuthState(){
